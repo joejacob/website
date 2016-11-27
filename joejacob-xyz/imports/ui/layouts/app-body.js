@@ -3,6 +3,7 @@
 import { Meteor } from 'meteor/meteor';
 import { ReactiveVar } from 'meteor/reactive-var';
 import { Template } from 'meteor/templating';
+import { FlowRouter } from 'meteor/kadira:flow-router';
 import { TAPi18n } from 'meteor/tap:i18n';
 
 import '../components/loading.js';
@@ -44,5 +45,8 @@ Template.App_body.events({
   'click .js-toggle-language'(event) {
     const language = $(event.target).html().trim();
     TAPi18n.setLanguage(language);
+  },
+  'click .resume'(event) {
+    FlowRouter.go('/resume');
   }
 });
