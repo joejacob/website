@@ -12,6 +12,9 @@
 	"pages": {
 		"appNotFound": {
 			"pageNotFound": "page non trouvée"
+		},
+		"rootRedirector": {
+			"hello": "quoi de neuf"
 		}
 	}
 }
