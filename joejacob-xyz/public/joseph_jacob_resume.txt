@@ -1,0 +1,73 @@
+JOSEPH JACOB
+(516) 673 - 5240 
+JOSEPH.JACOB@DUKE.EDU 
+GITHUB.COM/JOEJACOB
+
+EXPERIENCE
+Optoro, Software Engineering Intern (June 2016 - August 2016)
+- Learned Ruby on Rails by working Optiturn, their warehouse management software
+- Created the filetype_validation gem, which validates CSV and plain text files, has 100% test coverage, and has over 4,000 downloads
+- Implemented a photo duplicate detection algorithm that prevents similar photos from being uploaded to Optiturn
+
+Nibbly: Eat & Play, Software Engineering Intern (May 2015 - July 2015)
+- Improved Nibbly’s iOS application in Objective-C by:
+	- integrating the Google Maps API to allow users to input custom locations
+	- refactoring controller logic to implement a tab bar controller
+	- making performance and UI bug fixes
+- Used Flask to manage the web app and integrate the Yelp and Foursquare APIs server-side
+- Worked with AdMob and implemented user-engagement metrics using Mixpanel and Appboy to optimize CTR or conversion depending on the goal for the marketing directive
+
+Starting From Scratch - Durham, Member (February 2015 - Present)
+- Volunteers teaching local middle school students to program in the interactive language, Scratch, in order to increase interest in computer science
+
+ticker sticker, Chrome extension, Creator (August 2016 - Present)
+- Scans web page DOM for stock tickers and displays corresponding stock information in a tooltip
+- Uses YQL to lazily retrieve stock data on mouseover and cache data for later use
+
+Spawn, Web app, Co-creator (October 2015 - Present)
+- Allows users to create and join spontaneous events of various types (soccer math, lunch, etc.)
+- Created with Meteor and uses Bootstrap to design UI elements
+- Integrates Google Maps and Facebook functionality to support location fetching and social features (adding friends, private events, etc.)
+
+liferaft, iOS, Co-creator (November 2015)
+  - Group safety app that allows users to join a group of friends, keep track of their locations, send messages, and call Ubers
+- Written in Swift and uses Bluetooth to allow friends to join groups, Google Maps API to fetch location, and Uber API to call Ubers
+- Uses Firebase for reactive data storage for group and chat data
+
+
+EDUCATION
+Duke University
+B.S. in Computer Science
+August 2014 - Present
+Expected Graduation: May 2018
+Durham, NC
+Cum. GPA: 3.40/4.00
+
+Université Paris Diderot
+Study Abroad
+September 2016 - December 2016
+Paris, France
+
+The Wheatley School
+September 2009 - June 2014
+Old Westbury, NY
+Cum. GPA: 3.96/4.00
+
+COURSEWORK
+Data Structures and Algorithms
+Design and Analysis of Algorithms
+Software Design and Implementation
+Computer Architecture and Design
+Intro to Database Systems
+Intro to Operating Systems
+Open Source Software
+Discrete Math for Computer Science
+
+SKILLS
+Languages:
+Proficient: Java, Python, Ruby, Git, JavaScript, Swift
+Familiar: C, Scheme, SQL, HTML, Objective-C
+
+Frameworks:
+Proficient: Meteor, Ruby on Rails
+Familiar: Flask

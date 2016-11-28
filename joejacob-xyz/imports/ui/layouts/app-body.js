@@ -47,6 +47,6 @@ Template.App_body.events({
     TAPi18n.setLanguage(language);
   },
   'click .resume'(event) {
-    FlowRouter.go('/resume');
+    FlowRouter.go('/resume', {}, { type: 'pdf' });
   }
 });

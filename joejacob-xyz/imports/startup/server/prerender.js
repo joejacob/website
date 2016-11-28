@@ -1,10 +1,9 @@
 Meteor.startup(() => {
     const prerenderio = require('prerender-node');
-    const settings = Meteor.settings.PrerenderIO;
-
-    if (settings && settings.token && settings.host) {
-        prerenderio.set('prerenderToken', settings.token);
-        prerenderio.set('host', settings.host);
+    
+    if (process.env.PRERENDER_IO && process.env.DOMAIN_NAME) {
+        prerenderio.set('prerenderToken', process.env.PRERENDER_IO);
+        prerenderio.set('host', process.env.DOMAIN_NAME);
         prerenderio.set('protocol', 'http');
         WebApp.rawConnectHandlers.use(prerenderio);
     }
