@@ -37,7 +37,7 @@ Template.App_resume.helpers({
 	adjustFrame() {
 		Meteor.defer(function() {
 			$( "#txtiframe" ).load(function() {
-				this.height = this.contentWindow.document.body.scrollHeight + 'px';
+				this.height = this.contentWindow.document.body.scrollHeight*0.7 + 'px';
 				this.width = this.contentWindow.document.body.scrollWidth*2.3 + 'px';
 			});
 		});
