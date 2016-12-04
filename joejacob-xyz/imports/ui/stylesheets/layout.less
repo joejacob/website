@@ -1,17 +1,41 @@
-@container-padding: 5px;
-
-.container-large {
-	padding: @container-padding * 4;
+body {
+	margin: 10px 20px 20px;
 }
 
-.container {
-	padding: @container-padding;
+th {
+	font-weight: normal;
+	text-align: left;
 }
 
-.container-right {
-	padding-right: @container-padding;
+#header {
+	margin-bottom: 30px;
 }
 
-.container-left {
-	padding-left: @container-padding;
+#main-section {
+
 }
+
+#sidebar {
+	margin-right: 20px;
+	display:inline-block;
+	vertical-align: top;
+	overflow: auto;
+}
+
+#main-content {
+	margin-left: 20px;
+	display:inline-block;
+	vertical-align: top;
+	overflow: auto;
+}
+
+#footer {
+	position: fixed;
+	z-index: 10;
+	height: 20px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+}
+

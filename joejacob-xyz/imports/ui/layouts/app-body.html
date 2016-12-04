@@ -1,34 +1,26 @@
 <template name="App_body">
-	<div class="container">
-		<header>
-			<div class="header-links-and-lang">
-				<div class="header-home container-left">
-					<a href="/">{{_ 'layouts.appBody.home'}}</a>
+	<body>
+		<div id="header">
+			{{> App_header}}
+		</div>
+		<table>
+			<th>
+				<div id="sidebar">
+					{{> App_sidebar}}
 				</div>
-				<div class="header-links">
-					<a href="mailto:jcj26@duke.edu?Subject={{_ 'layouts.appBody.subject'}}">{{_ 'layouts.appBody.contact'}}</a> - <a href="https://github.com/joejacob" target="_blank">{{_ 'layouts.appBody.github'}}</a> - <a href="https://www.linkedin.com/in/josephcjacob" target="_blank">{{_ 'layouts.appBody.linkedin'}}</a> - <a href="" class="resume">{{_ 'layouts.appBody.resume'}}</a>
-				</div>
-				<div class="language-toggle container-right">
-		          {{#each language in languages}}
-		            {{#if isActiveLanguage language}}
-		              <span class="active">{{language}}</span>
-		            {{else}}
-		              <a href="" class="js-toggle-language">{{language}}</a>
-		            {{/if}}
-		          {{/each}}
-		        </div>
-		    </div>
-		</header>
-		<body>
-			<center>
-				<div class="container-large">
+			</th>
+			<th>
+				<div id="main-content">		
 					{{#if Template.subscriptionsReady}}
 						{{> Template.dynamic template=main}}
 					{{else}}
 						{{> App_loading}}
 					{{/if}}
 				</div>
-			</center>
-		</body>
-	</div>
+			</th>
+		</table>
+		<div id="footer">
+			{{> App_footer}}
+		</div>
+	</body>
 </template>

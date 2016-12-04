@@ -4,9 +4,11 @@ import { Meteor } from 'meteor/meteor';
 import { ReactiveVar } from 'meteor/reactive-var';
 import { Template } from 'meteor/templating';
 import { FlowRouter } from 'meteor/kadira:flow-router';
-import { TAPi18n } from 'meteor/tap:i18n';
 
 import '../components/loading.js';
+import '../components/header.js';
+import '../components/footer.js';
+import '../components/sidebar.js';
 import './app-body.html';
 
 const CONNECTION_ISSUE_TIMEOUT = 5000;
@@ -23,29 +25,16 @@ Meteor.startup(() => {
   }, CONNECTION_ISSUE_TIMEOUT);
 });
 
-Template.App_body.onCreated(function appBodyOnCreated() {
-});
-
 Template.App_body.helpers({
   connected() {
     if (showConnectionIssue.get()) {
       return Meteor.status().connected;
     }
     return true;
-  },
-  languages() {
-    return _.keys(TAPi18n.getLanguages());
-  },
-  isActiveLanguage(language) {
-    return (TAPi18n.getLanguage() === language);
-  },
+  }
 });
 
 Template.App_body.events({
-  'click .js-toggle-language'(event) {
-    const language = $(event.target).html().trim();
-    TAPi18n.setLanguage(language);
-  },
   'click .resume'(event) {
     FlowRouter.go('/resume', {}, { type: 'pdf' });
   }
