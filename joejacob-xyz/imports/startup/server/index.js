@@ -1,4 +1,3 @@
-import './fixtures.js';
-import './security.js';
 import './prerender.js';
+import './aws.js';
 import './api.js';

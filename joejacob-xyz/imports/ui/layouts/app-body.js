@@ -9,6 +9,7 @@ import '../components/loading.js';
 import '../components/header.js';
 import '../components/footer.js';
 import '../components/sidebar.js';
+
 import './app-body.html';
 
 const CONNECTION_ISSUE_TIMEOUT = 5000;
@@ -31,11 +32,5 @@ Template.App_body.helpers({
       return Meteor.status().connected;
     }
     return true;
-  }
-});
-
-Template.App_body.events({
-  'click .resume'(event) {
-    FlowRouter.go('/resume', {}, { type: 'pdf' });
   }
 });

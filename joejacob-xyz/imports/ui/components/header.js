@@ -1,6 +1,5 @@
 import { TAPi18n } from 'meteor/tap:i18n';
 
-
 import './header.html';
 
 Template.App_header.helpers({
@@ -16,5 +15,8 @@ Template.App_header.events({
 	'click .js-toggle-language'(event) {
     	const language = $(event.target).html().trim();
     	TAPi18n.setLanguage(language);
-  	}
+  },
+  'click .resume'(event) {
+      FlowRouter.go('/resume', {}, { type: 'pdf' });
+  }
 });

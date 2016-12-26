@@ -1,0 +1,14 @@
+todo:
+
+add caching system for github repo names
+	- make a server-side mongo collection
+	- only redo api calls if time elapsed has been at least 1 day
+make project page
+	- add title
+	- redo github call using repo name
+		- add similar caching system
+	- populate page
+add actual loading pages
+look into a static webhost
+switch project list to a static list
+	- instead use the repos publication to populate data for the pagewwww

@@ -1,14 +1,21 @@
 import './sidebar.html';
+import './loading.js';
 
 Repos = new Mongo.Collection('repos');
-var reposHandle;
 
 Template.App_sidebar.onCreated(function() {
-	reposHandle = Meteor.subscribe('githubRepos');
+	Meteor.subscribe('githubRepos');
 });
 
 Template.App_sidebar.helpers({
 	repos(){
-		return Repos.find();
+		console.log(Repos.find());
+		return Repos.find({ fork: false });
 	}
 });
+
+Template.App_sidebar.events({
+	'click .project-title'(event) {
+    	FlowRouter.go('/projects/' + event.target.text);
+  	}
+})

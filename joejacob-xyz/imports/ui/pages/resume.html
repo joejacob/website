@@ -1,14 +1,14 @@
 <template name="App_resume">
-	<center>
+	<div class="container">
 		<div class="toggle-resume-view">
 			{{{toggleValue isPdf 'pdf'}}} {{{toggleValue isPdf 'txt'}}}
 		</div>
-		<div id="test" class="resume-content">
+		<div class="resume-content">
 			{{#if isPdf}}
 				<canvas id="pdfcanvas" alt="my resume" onload="{{resumePdf}}"></canvas>
 			{{else}}
-				<iframe id="txtiframe" src="/joseph_jacob_resume.txt" frameborder="0" onload="{{adjustFrame}}"></iframe>
+				<iframe id="txtiframe" src={{textUrl}} frameborder="0" onload="{{adjustFrame}}"></iframe>
 			{{/if}}
 		</div>
-	</center>
+	</div>
 </template>

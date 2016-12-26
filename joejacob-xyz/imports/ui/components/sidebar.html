@@ -2,12 +2,16 @@
 	<div class="sidebar-heading">
 		projects
 	</div>
-	<div class="sidebar-projects">
-		{{#each repo in repos}}
-			<span>
-				<a href="#">{{repo.name}}</a>
-				<br>
-			</span>
-		{{/each}}
-	</div>
+	{{#if Template.subscriptionsReady}}
+		<div class="sidebar-projects">
+			{{#each repo in repos}}
+				<span>
+					<a href="" class="project-title">{{repo.name}}</a>
+					<br>
+				</span>
+			{{/each}}
+		</div>
+	{{else}}
+		{{> App_loading}}
+	{{/if}}
 </template>

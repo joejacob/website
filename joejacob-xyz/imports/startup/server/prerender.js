@@ -1,4 +1,4 @@
-Meteor.startup(() => {
+Meteor.startup(function() {
     const prerenderio = require('prerender-node');
     
     if (process.env.PRERENDER_IO && process.env.DOMAIN_NAME) {
