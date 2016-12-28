@@ -1,6 +1,6 @@
 import { PDFJS } from 'meteor/pascoual:pdfjs';
 import { FlowRouter } from 'meteor/kadira:flow-router';
-import '../../api/aws/server/s3.js';
+//import '../../api/aws/server/s3.js';
 import './resume.html';
 
 /* In your Template.xxx.rendered */
@@ -11,8 +11,8 @@ PDFJS.workerSrc = '/packages/pascoual_pdfjs/build/pdf.worker.js';
 //const S3 = new S3();
 //
 
-//AWS = require('aws-sdk');
-//const S3 = new AWS.S3();
+AWS = require('aws-sdk');
+const S3 = new AWS.S3();
 //console.log(AWS.config);
 //S3 = Session.get('AWS_S3');
 Template.App_resume.helpers({

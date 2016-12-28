@@ -16,6 +16,6 @@ Template.App_sidebar.helpers({
 
 Template.App_sidebar.events({
 	'click .project-title'(event) {
-    	FlowRouter.go('/projects/' + event.target.text);
+    	FlowRouter.go('/projects/' + event.target.text.replace(/\s+/g, '-'));
   	}
 })

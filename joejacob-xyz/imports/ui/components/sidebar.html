@@ -2,7 +2,26 @@
 	<div class="sidebar-heading">
 		projects
 	</div>
+
+
 	{{#if Template.subscriptionsReady}}
+	<div class="sidebar-projects">
+	<ul class="project-list">
+			<li>
+				<a id="ticker-sticker" class="project-title" href="">stock ticker tooltip maker</a>
+			</li>
+			<li>
+				<a id="tab-saver" class="project-title" href="">browser tab saver</a>
+			</li>
+			<li>
+				<a id="groupme-saveme" class="project-title" href="">groupme message saver</a>
+			</li>
+			<li>
+				<a id="spawn" class="project-title" href="">spontaneous event creator</a>
+			</li>
+	</ul>
+	</div>
+	<!--
 		<div class="sidebar-projects">
 			{{#each repo in repos}}
 				<span>
@@ -11,6 +30,7 @@
 				</span>
 			{{/each}}
 		</div>
+	-->	
 	{{else}}
 		{{> App_loading}}
 	{{/if}}
