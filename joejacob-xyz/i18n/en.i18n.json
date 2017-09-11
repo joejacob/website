@@ -16,5 +16,10 @@
 		"rootRedirector": {
 			"hello": "sup"
 		}
+	},
+	"components": {
+		"footer": {
+			"builtWith": "built with"
+		}
 	}
 }

@@ -6,6 +6,7 @@ import '../../ui/pages/root-redirector.js';
 import '../../ui/pages/project.js';
 import '../../ui/pages/resume.js';
 import '../../ui/pages/lisa.js';
+
 FlowRouter.route('/', {
   name: 'home',
   action() {

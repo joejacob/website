@@ -16,5 +16,10 @@
 		"rootRedirector": {
 			"hello": "quoi de neuf"
 		}
+	},
+	"components": {
+		"footer": {
+			"builtWith": "construit avec"
+		}
 	}
 }

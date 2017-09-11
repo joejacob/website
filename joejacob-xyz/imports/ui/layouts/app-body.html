@@ -1,26 +1,30 @@
 <template name="App_body">
-	<body>
+	<div id="container">
 		<div id="header">
 			{{> App_header}}
 		</div>
-		<table>
-			<th>
-				<div id="sidebar">
-					{{> App_sidebar}}
-				</div>
-			</th>
-			<th>
-				<div id="main-content">		
-					{{#if Template.subscriptionsReady}}
-						{{> Template.dynamic template=main}}
-					{{else}}
-						{{> App_loading}}
-					{{/if}}
-				</div>
-			</th>
-		</table>
+		<div id="body">
+			<body>
+				<table class="main-table">
+					<th class="main-th">
+						<div id="sidebar">
+							{{> App_sidebar}}
+						</div>
+					</th>
+					<th class="main-th">
+						<div id="main-content">		
+							{{#if Template.subscriptionsReady}}
+								{{> Template.dynamic template=main}}
+							{{else}}
+								{{> App_loading}}
+							{{/if}}
+						</div>
+					</th>
+				</table>
+			</body>
+		</div>
 		<div id="footer">
 			{{> App_footer}}
 		</div>
-	</body>
+	</div>
 </template>

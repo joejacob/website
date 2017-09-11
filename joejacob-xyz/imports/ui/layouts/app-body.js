@@ -12,6 +12,8 @@ import '../components/sidebar.js';
 
 import './app-body.html';
 
+// global.Buffer = global.Buffer || require("buffer").Buffer;
+
 const CONNECTION_ISSUE_TIMEOUT = 5000;
 
 // A store which is local to this file?
