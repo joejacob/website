@@ -1,18 +1,18 @@
 <template name="App_body">
-	<div id="container">
+	<div id="main-page">
 		<div id="header">
 			{{> App_header}}
 		</div>
-		<div id="body">
-			<body>
-				<table class="main-table">
+		<div id="content">
+			<table class="main-table">
+				<tr class="main-tr">
 					<th class="main-th">
 						<div id="sidebar">
 							{{> App_sidebar}}
 						</div>
 					</th>
 					<th class="main-th">
-						<div id="main-content">		
+						<div id="main-content">	
 							{{#if Template.subscriptionsReady}}
 								{{> Template.dynamic template=main}}
 							{{else}}
@@ -20,8 +20,8 @@
 							{{/if}}
 						</div>
 					</th>
-				</table>
-			</body>
+				</tr>
+			</table>
 		</div>
 		<div id="footer">
 			{{> App_footer}}

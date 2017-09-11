@@ -1,5 +1,5 @@
 todo:
-
+google analytics
 add caching system for github repo names
 	- make a server-side mongo collection
 	- only redo api calls if time elapsed has been at least 1 day
