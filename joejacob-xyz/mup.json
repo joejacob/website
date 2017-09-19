@@ -2,7 +2,7 @@
     // Server authentication info
     "servers": [
         {
-            "host": "ec2-54-226-41-186.compute-1.amazonaws.com",
+            "host": "ec2-52-91-179-187.compute-1.amazonaws.com",
             "username": "ubuntu",
             "password": "password",
             // or pem file (ssh based authentication)
@@ -14,29 +14,28 @@
             "env": {}
     }
   ],
-
     // Install MongoDB on the server. Does not destroy the local MongoDB on future setups
     "setupMongo": true,
-
     // Application name (no spaces).
     "appName": "joejacob-xyz",
-
     // Location of app (local directory). This can reference '~' as the users home directory.
     // i.e., "app": "~/Meteor/my-app",
     // This is the same as the line below.
     "app": "~/Google Drive/Interests/Coding/projects/website/joejacob-xyz",
-
     // Configure environment
     // ROOT_URL must be set to your correct domain (https or http)
     "env": {
         "PORT": 80,
-        "ROOT_URL": "http://joejacob.xyz"
+        "ROOT_URL": "https://joejacob.xyz"
     },
-
+    "ssl": {
+       "certificate": ".deploy/ssl/fullchain.pem", // this is a bundle of certificates
+       "key": ".deploy/ssl/privkey.pem", // this is the private key of the certificate
+       "port": 443 // 443 is the default value and it’s the standard HTTPS port
+    },
     // Meteor Up checks if the app comes online just after the deployment.
     // Before mup checks that, it will wait for the number of seconds configured below.
     "deployCheckWaitTime": 30,
-
     // show a progress bar while uploading. 
     // Make it false when you deploy using a CI box.
     "enableUploadProgressBar": true,

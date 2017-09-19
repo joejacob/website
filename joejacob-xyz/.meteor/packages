@@ -28,4 +28,5 @@ gadicohen:sitemaps
 http@1.2.12
 session
 dynamic-import@0.1.1
-appcache
+force-ssl
+reywood:iron-router-ga
